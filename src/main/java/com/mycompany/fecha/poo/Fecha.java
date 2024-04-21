@@ -17,7 +17,7 @@ public class Fecha {
     }
     
     // Complejidad temporal O(1)
-    public String fechaCorta() { //Complejidad temporal O(1)
+    public String fechaCorta() { 
         String fc = dia + "/" + mes + "/" + ano;
         return fc;
     }
@@ -33,7 +33,7 @@ public class Fecha {
           }
         }
           else if (mes!=2){  
-              return (dia > 0 && dia < 32 && mes < 12);
+              return (dia > 0 && dia < 32 && mes <= 12);
           
           }
         return false;
